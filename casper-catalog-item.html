@@ -12,7 +12,7 @@
           padding: 0;
         }
 
-        :host:hover {
+        :host(:hover) {
           background: rgba(var(--primary-color-rgb), 0.07);
           border: 1px solid var(--primary-color);
         }
@@ -41,7 +41,8 @@
         }
     </style>
     <div class="gridItem">
-      <a href$="https://checkout.cldware.com/standalone?mt=[[item.data_mt]]&cid=[[item.data_cid]]"
+      For Johnny Branches <br>(not fully functional - to review together)
+      <a href$="http://localhost:3009/standalone?mt=[[item.data_mt]]&cid=[[item.data_cid]]"
          checkout-href="http://localhost:3009"
          no-follow
          class="checkout"
